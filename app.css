@@ -1,0 +1,179 @@
+:root{
+/* Primary Colors */
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+/* Neutral Colors */
+--Transparent-white: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray: hsl(0, 0%, 95%); 
+/* Fonts */
+--font-Deca: 'Lexend Deca', sans-serif;
+--font-Shoulders: 'Big Shoulders Display', cursive;
+
+}
+
+
+html {
+    font-size: 15px;
+}
+
+main.wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-light-gray);
+    padding: 1.6rem;
+}
+
+section.all {
+    max-width: 327px;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+}
+ 
+section.all p {
+    padding: 0px 3.166rem 0 2.8rem;
+    margin-bottom: 2rem;
+      
+    line-height: 1.6rem;
+    font-family: var(--font-Deca);
+    font-size: 1rem;
+    color: var(--Transparent-white);
+}
+
+/* Settings for each section */
+.one {
+    width: 100%;
+    height: auto;
+    background-color: var(--Bright-orange);
+    color: var(--Very-light-gray);
+    border-radius: 0.666rem 0.666rem 0 0;
+}
+
+.one button {
+    color: var(--Bright-orange);
+}
+
+.two {
+    width: 100%;
+    height: auto;
+    background-color: var(--Dark-cyan);
+}
+
+.two button {
+    color: var(--Dark-cyan);
+}
+
+.three {
+    width: 100%;
+    height: auto;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 0 0.666rem 0.666rem;
+}
+.three button {
+    color: var(--Very-dark-cyan);
+}
+
+/* Same settings for all sections elements */
+
+header h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.6rem;
+    color: var(--Very-light-gray);
+    font-family: var(--font-Shoulders);
+    text-transform: uppercase;
+    
+    margin: 2.2rem 2.666rem;
+    padding-top: 1rem;
+}
+
+button { 
+    width: 9.86rem;
+    height: 3.2rem;
+    margin-left: 2.666rem;
+    margin-bottom: 3.1rem;
+    
+    background-color: var(--Very-light-gray);
+    border: 1px solid var(--Very-light-gray);
+    border-radius: 2.666rem;
+    font-family: var(--font-Deca);
+}
+
+button:hover,
+button:active {
+    background-color: inherit;
+    color: var(--Very-light-gray);
+    border: 2px solid var(--Very-light-gray);
+}
+
+/* ICONS */
+
+.one h1::before {
+    content: url("images/icon-sedans.svg");
+    padding-bottom: 3.3rem;
+}
+
+.two h1::before {
+    content: url("images/icon-suvs.svg");
+    padding-bottom: 3.3rem;
+}
+
+.three h1::before {
+    content: url("images/icon-luxury.svg");
+    padding-bottom: 3.3rem;
+}
+
+footer {
+    background-color: var(--Very-light-gray);
+}
+
+/* Desktop version */
+
+@media (min-width: 850px) {
+    main.wrap {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    section.all {
+        max-width: 920px;
+        max-height: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+    }
+
+    section.all p{
+        padding: 0.5rem 3.5rem 0 3rem ;
+        line-height: 1.666rem;
+    }
+
+    section header h1{
+        padding-left: 0.6rem;
+    }
+
+    .one {
+       border-radius: 0.666rem 0 0 0.666rem;
+    }
+
+    .three {
+        border-radius: 0 0.666rem 0.666rem 0; 
+    }
+    button {
+        margin-top: 3.5rem;
+        padding-left: 0.5rem;
+    }
+
+    .btn {
+        margin-left: 3rem;
+    }
+}
+
+
