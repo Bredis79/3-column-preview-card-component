@@ -26,6 +26,11 @@ main.wrap {
     padding: 1.6rem;
 }
 
+.hidden{
+    visibility: hidden;
+    position: absolute;
+}
+
 section.all {
     max-width: 327px;
     max-height: auto;
