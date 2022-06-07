@@ -26,9 +26,12 @@ main.wrap {
     padding: 1.6rem;
 }
 
-.hidden{
-    visibility: hidden;
+h1{
+    font-size: 0.1rem;
     position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--Very-light-gray);
 }
 
 section.all {
