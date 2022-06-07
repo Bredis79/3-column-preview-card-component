@@ -143,11 +143,6 @@ footer {
 @media (min-width: 850px) {
     main.wrap {
         height: 100vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
     }
 
     section.all {
@@ -169,10 +164,13 @@ footer {
 
     .one {
        border-radius: 0.666rem 0 0 0.666rem;
+       flex-shrink: 1;
     }
 
     .three {
         border-radius: 0 0.666rem 0.666rem 0; 
+        flex-shrink: 1;
+
     }
     button {
         margin-top: 3.5rem;
@@ -184,8 +182,7 @@ footer {
     }
 
     footer {
-        position: absolute;
-        bottom: 7.5rem;
+        display: none;
     }
    
 }
