@@ -109,6 +109,15 @@ button:active {
     border: 2px solid var(--Very-light-gray);
 }
 
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
 /* ICONS */
 
 .sedan h2::before {
@@ -171,11 +180,3 @@ footer {
     }
 }
 
-.attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
