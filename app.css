@@ -26,14 +26,6 @@ main.wrapped {
     padding: 1.6rem;
 }
 
-main h1{
-    font-size: 0.1rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: var(--Very-light-gray);
-}
-
 section.cars {
     max-width: 327px;
     max-height: auto;
