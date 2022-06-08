@@ -164,13 +164,10 @@ footer {
 
     .sedan {
        border-radius: 0.666rem 0 0 0.666rem;
-       flex-shrink: 1;
     }
 
     .luxury {
         border-radius: 0 0.666rem 0.666rem 0; 
-        flex-shrink: 1;
-
     }
     button {
         margin-top: 3.5rem;
